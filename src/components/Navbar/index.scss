@@ -1,0 +1,114 @@
+.nav-bar {
+  background: #181818;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    img {
+      width: 22px;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: 24px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+      padding: 15px;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 11px;
+        letter-spacing: 2px;
+        position: absolute;
+        width: 100%;
+        // text-align: center;
+        opacity: 0;
+        left: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+
+    li {
+      a {
+        padding: 7px 7px;
+        display: block;
+        font-size: 19px;
+        line-height: 16px;
+        color: #4d4d4e;
+
+        &:hover {
+          color: #ffd700;
+        }
+      }
+      a:hover {
+        color: #ffd700;
+      }
+    }
+  }
+}
