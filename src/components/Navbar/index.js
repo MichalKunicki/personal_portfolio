@@ -1,36 +1,53 @@
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
+import cpu from '../../assets/images/cpu.svg'
+import box from '../../assets/images/box.svg'
+import user from '../../assets/images/user.svg'
+import tool from '../../assets/images/tool.svg'
+import mail from '../../assets/images/mail.svg'
 
 const Navbar = () => {
   return (
     <div className="nav-bar">
-      <div>
-        <Link className="logo" to="/">
-          <img src={LogoS} alt="Logo" />
-        </Link>
-      </div>
+      <Link exact="true" activeclassname="active" to="/">
+        <div className="logo">
+          <h1>M. Kunicki</h1>
+        </div>
+      </Link>
       <div>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
-            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            <img alt="home" src={cpu}></img>
           </NavLink>
           <NavLink activeclassname="active" className="about-link" to="/about">
-            <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+            <img alt="about" src={user}></img>
+          </NavLink>
+          <NavLink
+            activeclassname="active"
+            className="skills-link"
+            to="/skills"
+          >
+            <img alt="about" src={tool}></img>
+          </NavLink>
+          <NavLink
+            activeclassname="active"
+            className="portfolio-link"
+            to="/portfolio"
+          >
+            <img alt="about" src={box}></img>
           </NavLink>
           <NavLink
             activeclassname="active"
             className="contact-link"
             to="/contact"
           >
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <img alt="contact" src={mail}></img>
           </NavLink>
         </nav>
       </div>
@@ -42,7 +59,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faLinkedin} color="#bdbdbd" />
             </a>
           </li>
           <li>
@@ -51,7 +68,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faGithub} color="#bdbdbd" />
             </a>
           </li>
           <li>
@@ -60,7 +77,7 @@ const Navbar = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+              <FontAwesomeIcon icon={faSkype} color="#bdbdbd" />
             </a>
           </li>
         </ul>

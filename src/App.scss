@@ -1,19 +1,11 @@
-$primary-color: #ffd700;
+$primary-color: #00d131;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
-    url('./assets/fonts/LaBelleAurore.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

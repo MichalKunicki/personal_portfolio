@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: rgba (0, 0, 0);
   width: 100%;
   height: 50px;
   position: fixed;
@@ -9,12 +9,24 @@
   align-items: center;
 
   .logo {
+    width: 130px;
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    padding: 10px;
+    position: relative;
+    left: 100px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 11px;
+    font-family: "Oleo Script Swash Caps", cursive;
+    margin-top: 2px;
+    text-decoration: underline;
+    text-decoration-color:#a60061; 
 
     img {
-      width: 22px;
+      width: 40px;
+      border-radius: 50px;
+      margin-right: 5px;
     }
   }
 
@@ -22,13 +34,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    img {
+      filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(93%) contrast(96%);
+      height: 28px;
+      margin-top: 4px;
+    }
 
     a {
-      font-size: 24px;
-      color: #4d4d4e;
       display: block;
-      line-height: 51px;
-      height: 51px;
       position: relative;
       text-decoration: none;
       padding: 15px;
@@ -38,9 +52,9 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #00d131;
 
-        svg {
+        img {
           opacity: 0;
         }
 
@@ -53,9 +67,11 @@
         content: '';
         font-size: 11px;
         letter-spacing: 2px;
+        line-height: 35px;
         position: absolute;
         width: 100%;
-        // text-align: center;
+        text-align: center;
+        margin-top: 1px;
         opacity: 0;
         left: 0;
         -webkit-transition: all 0.3s ease-out;
@@ -75,6 +91,18 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: 'SKILLS'
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'WORKS'
+      }
+    }
+
     a.contact-link {
       &:after {
         content: 'CONTACT';
@@ -82,8 +110,8 @@
     }
 
     a.active {
-      svg {
-        color: #ffd700;
+      img {
+        filter: invert(55%) sepia(50%) saturate(4719%) hue-rotate(104deg) brightness(105%) contrast(109%);
       }
     }
   }
@@ -91,23 +119,20 @@
   ul {
     display: flex;
     align-items: center;
+    position: relative;
+    right: 100px;
     padding: 10px;
     list-style: none;
 
     li {
       a {
-        padding: 7px 7px;
+        padding: 10px 10px;
         display: block;
         font-size: 19px;
         line-height: 16px;
-        color: #4d4d4e;
-
-        &:hover {
-          color: #ffd700;
-        }
       }
-      a:hover {
-        color: #ffd700;
+      svg:hover {
+        color: #00d131;
       }
     }
   }
