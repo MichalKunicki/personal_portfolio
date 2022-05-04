@@ -4,7 +4,7 @@ import { ArcballControls, Stars, useCursor } from '@react-three/drei'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import './index.scss'
 
-function Box(props) {
+function Cube(props) {
   const ref = useRef()
   const [clicked, click] = useState(false)
   const [hovered, hover] = useState(false)
@@ -19,13 +19,13 @@ function Box(props) {
     <mesh
       {...props}
       ref={ref}
-      scale={clicked ? 1.5 : 1}
+      scale={clicked ? 1 : 1}
       onClick={() => click(!clicked)}
       onPointerOver={() => hover(true)}
       onPointerOut={() => hover(false)}
     >
-      <boxGeometry args={[2, 2, 2]} />
-      <meshStandardMaterial color="#00735a" map={colorMap} />
+      <boxGeometry args={[1.7, 1.7, 1.7]} />
+      <meshBasicMaterial color="#006300" map={colorMap} />
     </mesh>
   )
 }
@@ -37,10 +37,18 @@ export default function Logo() {
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <ArcballControls />
-        <Stars />
-        <ambientLight intesity={0.1} />
+        <Stars
+          radius={100}
+          depth={50}
+          count={2000}
+          factor={4}
+          saturation={0}
+          fade
+          speed={3}
+        />
+        <ambientLight intesity={0.5} />
         <Suspense fallback={null}>
-          <Box />
+          <Cube />
         </Suspense>
       </Canvas>
     </div>
