@@ -5,7 +5,7 @@ import Contact from './components/Contact'
 import Layout from './components/Layout'
 import './App.scss'
 
-function App() {
+export default function App() {
   return (
     <>
       <Routes>
@@ -18,5 +18,3 @@ function App() {
     </>
   )
 }
-
-export default App

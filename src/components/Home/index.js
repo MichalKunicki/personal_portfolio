@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Logo from './Logo/index.js'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -58,7 +59,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
+        <Logo />
       </div>
 
       <Loader type="pacman" />
