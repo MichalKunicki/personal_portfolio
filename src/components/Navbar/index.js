@@ -51,7 +51,7 @@ const Navbar = () => {
           </NavLink>
         </nav>
       </div>
-      <div>
+      <div className="socials">
         <ul>
           <li>
             <a

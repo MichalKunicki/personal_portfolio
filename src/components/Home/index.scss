@@ -1,4 +1,5 @@
 .home-page {
+  overflow-x: hidden;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -6,6 +7,7 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    z-index: 2;
   }
 
   h1 {
@@ -38,25 +40,17 @@
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
-
-    img {
-      margin-left: 20px;
-      opacity: 0;
-      width: 32px;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
   }
 
   h2 {
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+    line-height: 3px;
   }
 
   .flat-button {
@@ -79,5 +73,70 @@
     }
   }
 }
+@media screen and (max-width: 1152px) {
+  .home-page {
+    .text-zone {
+      width: 80%;
+      padding: 30px;
+      overflow: hidden;
+    }
+    h1 {
+      &:before {
+        left: 2%;
+      }
+      &:after {
+        position: relative;
+      }
+    }
+    h2 {
+      font-size: 11px;
+    }
+  }
+}
+@media screen and (max-width: 434px) {
+  .home-page {
+    .text-zone {
+      left: 0;
+      top: 26%;
+    }
+    h1 {
+      font-size: 46px;
+      line-height: 45px;
+      overflow: hidden;
+      
+      &:before {
+        left: 5%;
+      }
+      &:after {
+        margin-left: 4px;
+        margin-top: 0;
+      }
+    }
+    h2 {
+      margin-top: 10px;
+    }
+    .flat-button {
+      margin-top: 12px;
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .home-page {
+    h1 {
+      font-size: 34px;
+    }
+    .flat-button {
+      display: none;
+    }
+  }
+}
+// @media screen and (max-height: 632px) {
+//   .home-page {
+//     .text-zone {
+//       left: 0;
+//       top: 40%;
+//     }
+//   }
+// }
 
 

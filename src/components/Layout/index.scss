@@ -38,7 +38,11 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
-
+.container.about-page {
+  p {
+    font-size: 14px !important; 
+  }
+}
 .container.contact-page,
 .container.skills-page,
 .container.about-page,
@@ -55,7 +59,7 @@
     z-index: 3;
 
     h1 {
-      font-size: 58px;
+      font-size: 64px;
       font-family: 'Coolvetica';
       color: #fff;
       font-weight: 400;
@@ -112,6 +116,43 @@
   .text-animate-hover {
     &:hover {
       color: #00d131;
+    }
+  }
+}
+@media screen and (max-width: 1152px) {
+  .container.contact-page,
+  .container.skills-page,
+  .container.about-page,
+  .container.works-page {
+    .text-zone {
+      width: 80%;
+      background:rgba(0, 0, 0, 0.4);
+      border-radius: 50px;
+      padding: 40px;
+      left: 5%;
+    }
+  }
+}
+@media screen and (max-height: 632px) {
+  .tags {
+    display: none;
+  }
+}
+@media screen and (max-width: 541px) {
+  .tags {
+    display: none;
+  }
+}
+@media screen and (max-height: 514px) {
+  .tags {
+    display: none;
+  }
+  .container.contact-page,
+  .container.skills-page,
+  .container.about-page,
+  .container.works-page {
+    .text-zone {
+      top: 40%;
     }
   }
 }

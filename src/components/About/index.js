@@ -30,19 +30,28 @@ const About = () => {
               idx={15}
             />
           </h1>
+          <p></p>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm an ambitious front-end developer actively looking for a position
+            in a start-up or an established company. For the past 18 months I've
+            been programming full-time, constantly learning new technologies as
+            well as freelancing at the same time. I'm mostly self-taught but I
+            have a bit of academic computer-science knowledge after completing
+            the Harvard's CS50 Course.
           </p>
           <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I've been working remotely for the past 4 years and that is the work
+            environment I strive in. All my life goals circle around the idea of
+            remote work so I guess you wouldn't see me in an office. &#9969; My
+            endgoal in programming is to join or create an innovative Web3
+            project based on blockchain solutions.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            In my free time I'm a crypto investor, pianist and squash player. I
+            am very dedicated to my schedule and I am confident that I would be
+            a great addition to your team. This year, I hope to go to the next
+            level with my programming skills under a watchful eye of a fantastic
+            senior engineer/project leader.
           </p>
         </div>
       </div>

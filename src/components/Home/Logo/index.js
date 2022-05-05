@@ -1,6 +1,6 @@
 import { useRef, useState, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
-import { ArcballControls, Stars, useCursor } from '@react-three/drei'
+import { OrbitControls, Stars, useCursor } from '@react-three/drei'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import './index.scss'
 
@@ -11,7 +11,7 @@ function Cube(props) {
   useCursor(hovered)
   useFrame(
     (state, delta) =>
-      (ref.current.rotation.x = ref.current.rotation.y += delta / 6)
+      (ref.current.rotation.x = ref.current.rotation.y += delta / 10)
   )
   const colorMap = useLoader(TextureLoader, 'code.jpg')
 
@@ -25,7 +25,7 @@ function Cube(props) {
       onPointerOut={() => hover(false)}
     >
       <boxGeometry args={[1.7, 1.7, 1.7]} />
-      <meshBasicMaterial color="#34a852" map={colorMap} />
+      <meshBasicMaterial color="#008011" map={colorMap} />
     </mesh>
   )
 }
@@ -34,19 +34,19 @@ export default function Logo() {
   return (
     <div className="canvas">
       <Canvas>
-        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-        <pointLight position={[-10, -10, -10]} />
-        <ArcballControls />
+        {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <pointLight position={[-10, -10, -10]} /> */}
+        <OrbitControls />
         <Stars
           radius={100}
           depth={50}
-          count={2000}
+          count={1000}
           factor={4}
           saturation={0}
           fade
-          speed={3}
+          speed={2}
         />
-        <ambientLight intesity={0.5} />
+        <ambientLight intesity={0.1} />
         <Suspense fallback={null}>
           <Cube />
         </Suspense>

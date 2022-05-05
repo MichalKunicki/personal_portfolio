@@ -34,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     img {
       filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(30deg) brightness(93%) contrast(96%);
       height: 28px;
@@ -133,6 +133,30 @@
       }
       svg:hover {
         color: #00d131;
+      }
+    }
+  }
+}
+@media screen and (max-width: 765px) {
+  .nav-bar {
+    .logo {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 605px) {
+  .nav-bar {
+    justify-content: center;
+    .socials {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+      width: 100%;
+      
+      ul {
+        right: 0px;
       }
     }
   }
