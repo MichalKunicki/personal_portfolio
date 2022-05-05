@@ -25,7 +25,7 @@ function Cube(props) {
       onPointerOut={() => hover(false)}
     >
       <boxGeometry args={[1.7, 1.7, 1.7]} />
-      <meshBasicMaterial color="#006300" map={colorMap} />
+      <meshBasicMaterial color="#34a852" map={colorMap} />
     </mesh>
   )
 }

@@ -38,7 +38,7 @@ const Navbar = () => {
           <NavLink
             activeclassname="active"
             className="portfolio-link"
-            to="/portfolio"
+            to="/works"
           >
             <img alt="about" src={box}></img>
           </NavLink>

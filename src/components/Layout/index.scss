@@ -15,8 +15,9 @@
   position: absolute;
   bottom: 60px;
   left: 120px;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Oleo Script Swash Caps', cursive;
+  z-index: 3;
 }
 
 .bottom-tag-html {
@@ -39,7 +40,9 @@
 }
 
 .container.contact-page,
-.container.about-page {
+.container.skills-page,
+.container.about-page,
+.container.works-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -49,11 +52,12 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+    z-index: 3;
 
     h1 {
-      font-size: 53px;
+      font-size: 58px;
       font-family: 'Coolvetica';
-      color: #00d131;
+      color: #fff;
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -64,7 +68,7 @@
         content: '<h1>';
         font-family: 'Oleo Script Swash Caps', cursive;
         color: #00d131;
-        font-size: 18px;
+        font-size: 20px;
         position: absolute;
         margin-top: -10px;
         left: -10px;
@@ -76,7 +80,7 @@
         content: '<h1/>';
         font-family: 'Oleo Script Swash Caps', cursive;
         color: #00d131;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 18px;
         position: absolute;
         left: -30px;
@@ -87,8 +91,8 @@
     }
 
     p {
-      font-size: 13px;
-      color: #fff;
+      font-size: 15px;
+      color: rgb(234, 234, 234);
       font-family: sans-serif;
       font-weight: 300;
       max-width: fit-content;
@@ -107,7 +111,7 @@
 
   .text-animate-hover {
     &:hover {
-      color: #fff;
+      color: #00d131;
     }
   }
 }
