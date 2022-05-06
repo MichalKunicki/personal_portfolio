@@ -1,16 +1,14 @@
-.video {
+.video-cloud {
   height: 100%;
   width: 100%;
 }
 video {
-  z-index: 2;
   object-fit: cover;
-  height: 88%;
-  width: 55%;
+  height: 84%;
+  width: 50%;
   position: absolute;
   right: 0;
-  overflow: hidden;
-}
+}  
 @media screen and (max-width: 1455px) {
   video {
     width: 60%;

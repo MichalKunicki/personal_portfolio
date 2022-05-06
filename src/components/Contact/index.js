@@ -4,7 +4,6 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './contact.scss'
-import cloud from '../../assets/videos/green-cloud.mp4'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,12 +34,6 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
-        <div className="video">
-          <video autoPlay>
-            <source src={cloud} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
         <div className="text-zone">
           <h1>
             <AnimatedLetters

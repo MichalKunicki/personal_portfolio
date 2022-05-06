@@ -25,7 +25,7 @@ function Cube(props) {
       onPointerOut={() => hover(false)}
     >
       <boxGeometry args={[1.7, 1.7, 1.7]} />
-      <meshBasicMaterial color="#008011" map={colorMap} />
+      <meshBasicMaterial color="#009c0d" map={colorMap} />
     </mesh>
   )
 }
@@ -46,7 +46,7 @@ export default function Logo() {
           fade
           speed={2}
         />
-        <ambientLight intesity={0.1} />
+        <ambientLight intesity={0.5} />
         <Suspense fallback={null}>
           <Cube />
         </Suspense>

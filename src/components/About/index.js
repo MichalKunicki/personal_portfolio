@@ -16,7 +16,7 @@ const About = () => {
   return (
     <>
       <div className="container about-page">
-        <div className="video">
+        <div className="video-cloud">
           <video autoPlay>
             <source src={cloud} type="video/mp4" />
             Your browser does not support the video tag.
@@ -42,16 +42,16 @@ const About = () => {
           <p align="LEFT">
             I've been working remotely for the past 4 years and that is the work
             environment I strive in. All my life goals circle around the idea of
-            remote work so I guess you wouldn't see me in an office. &#9969; My
-            endgoal in programming is to join or create an innovative Web3
+            remote work so I guess you wouldn't meet me in an office. &#127796;
+            My endgoal in programming is to join or create an innovative Web3
             project based on blockchain solutions.
           </p>
           <p>
             In my free time I'm a crypto investor, pianist and squash player. I
-            am very dedicated to my schedule and I am confident that I would be
-            a great addition to your team. This year, I hope to go to the next
-            level with my programming skills under a watchful eye of a fantastic
-            senior engineer/project leader.
+            am very dedicated to my work and schedule and I am confident that I
+            would be a great addition to your team. This year, I hope to go to
+            the next level with my programming skills under a watchful eye of a
+            fantastic senior engineer/project leader.
           </p>
         </div>
       </div>
