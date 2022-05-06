@@ -3,7 +3,7 @@ import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import './contact.scss'
 import cloud from '../../assets/videos/green-cloud.mp4'
 
 const Contact = () => {

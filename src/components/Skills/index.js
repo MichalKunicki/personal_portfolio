@@ -8,7 +8,7 @@ import {
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
+import './skills.scss'
 import nextLogo from '../../assets/images/nextjs.svg'
 import gatsbyLogo from '../../assets/images/gatsby.svg'
 

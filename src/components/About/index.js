@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import './about.scss'
 import cloud from '../../assets/videos/green-cloud.mp4'
 
 const About = () => {

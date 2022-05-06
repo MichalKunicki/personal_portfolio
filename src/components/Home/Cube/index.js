@@ -2,7 +2,7 @@ import { useRef, useState, Suspense } from 'react'
 import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls, Stars, useCursor } from '@react-three/drei'
 import { TextureLoader } from 'three/src/loaders/TextureLoader'
-import './index.scss'
+import './cube.scss'
 
 function Cube(props) {
   const ref = useRef()

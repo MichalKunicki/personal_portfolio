@@ -1,4 +1,4 @@
-import './index.scss'
+import './navbar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,

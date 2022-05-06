@@ -10,7 +10,7 @@ import {
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
+import './works.scss'
 
 const Works = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
