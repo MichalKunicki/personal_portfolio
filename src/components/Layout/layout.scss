@@ -120,6 +120,9 @@
   }
 }
 @media screen and (max-width: 1152px) {
+  .tags {
+    left: 40px;
+  }
   .container.contact-page,
   .container.about-page,
   .container.works-page {
@@ -150,7 +153,7 @@
 }
 @media screen and (max-width: 541px) {
   .tags {
-    display: none;
+    font-size: 17px;
   }
   .container.contact-page,
   .container.skills-page,
@@ -176,6 +179,27 @@
   .container.works-page {
     .text-zone {
       top: 40%;
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .tags {
+    display: none;
+  }
+  .container.contact-page,
+  .container.skills-page,
+  .container.about-page,
+  .container.works-page {
+    .text-zone {
+      h1 {
+        font-size: 40px;
+        &:before, &:after {
+          font-size: 16px;
+        }
+      };
+      p {
+        font-size: 11px !important;
+      }
     }
   }
 }
