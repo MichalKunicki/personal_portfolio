@@ -43,7 +43,7 @@ const About = () => {
             I've been working remotely for the past 4 years and that is the work
             environment I strive in. All my life goals circle around the idea of
             remote work so I guess you wouldn't meet me in an office. &#127796;
-            My endgoal in programming is to join or create an innovative Web3
+            My endgoal in programming is to join or create an innovative web3
             project based on blockchain solutions.
           </p>
           <p>

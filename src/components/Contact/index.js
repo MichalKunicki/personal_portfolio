@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './contact.scss'
+import Matrix from './Matrix/index.js'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -43,9 +44,12 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am currently applying for mid-positions specifically as a React
+            front end developer - with an emphasis on web3 projects or
+            innovative technology. I am looking for a long-term commitment
+            &#x28;2 years +&#x29;. If my portfolio website and projects sparked
+            some interest, drop me an e-mail or contact me via
+            Skype/Linkedin!&#x1F47D;
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -83,6 +87,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <Matrix />
       </div>
       <Loader type="pacman" />
     </>
