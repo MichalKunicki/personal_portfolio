@@ -50,9 +50,9 @@ const Skills = () => {
             more.
           </p>
           <p>
-            I am open to learning all the new technologies necessary for your
-            techstack. As always in programming, all that is needed is a bit of
-            time and a stack of documentation to crunch through. &#x1F36A;
+            I am open to learning new technologies required for your project. As
+            always in programming, all that is needed is a bit of time and a
+            stack of documentation to crunch through. &#x1F36A;
           </p>
         </div>
 

@@ -116,7 +116,12 @@
 
     a.active {
       img {
-        filter: invert(55%) sepia(50%) saturate(4719%) hue-rotate(104deg) brightness(105%) contrast(109%);
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
+        color: #00d131;
       }
     }
   }

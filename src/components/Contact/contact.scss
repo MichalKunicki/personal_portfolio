@@ -58,7 +58,7 @@
     font-size: 11px;
     letter-spacing: 2px;
     text-decoration: none;
-    padding: 11px 14px;
+    padding: 9px 21px !important;
     border: 1px solid #00d131;
     border-radius: 5px;
     background-color: black;
@@ -69,6 +69,20 @@
     background-color: #00d131;
     color: black; 
     cursor: crosshair;
+  }
+  .created-with {
+    display: flex;
+    position: relative;
+    .icon {
+      font-size: 15px;
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+    a {
+      svg:hover {
+        color: #00d131;
+      }
+    }
   }
 }
 @media screen and (max-width: 380px) {
@@ -86,7 +100,20 @@
     font-size: 30px !important;
   }
 }
+@media screen and (max-width: 330px) {
+  .created-with {
+    display: none !important;
+  }
+}
 @media screen and (max-height: 850px) {
+  h3 {
+    margin-top: 0;
+  }
+  .created-with {
+    .icon {
+      margin-top: 0px !important;
+    }
+  }
   textarea {
     height: 59px !important;
   }

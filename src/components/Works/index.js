@@ -42,7 +42,7 @@ const Works = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+                        href="https://www.linkedin.com"
                         target="_blank"
                         rel="noreferrer"
                       >

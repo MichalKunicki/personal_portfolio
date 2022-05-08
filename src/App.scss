@@ -41,7 +41,7 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 /* Track */
@@ -57,4 +57,25 @@ textarea {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #005213;
+}
+
+@media screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #009a24;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #005213;
+  }
 }

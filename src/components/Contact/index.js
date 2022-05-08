@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Loader from 'react-loaders'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './contact.scss'
 import Matrix from './Matrix/index.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -72,37 +73,18 @@ const Contact = () => {
                 required
               ></textarea>
               <input type="submit" className="flat-button" value="SEND" />
-              {/* <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul> */}
+              <div className="created-with">
+                <h3>Website created with React & ThreeJS.</h3>
+                <div className="icon">
+                  <a
+                    href="https://github.com/MichalKunicki/personal_portfolio"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLink} color="#bdbdbd" />
+                  </a>
+                </div>
+              </div>
             </form>
           </div>
         </div>
