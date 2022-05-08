@@ -17,7 +17,7 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="video-cloud">
-          <video autoPlay>
+          <video autoPlay muted playsInline webkit-playsinline>
             <source src={cloud} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

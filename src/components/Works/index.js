@@ -10,7 +10,7 @@ const Works = () => {
     <>
       <div className="container works-page">
         <div className="video-stars">
-          <video autoPlay>
+          <video autoPlay muted playsInline webkit-playsinline>
             <source src={stars} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
