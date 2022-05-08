@@ -32,7 +32,7 @@ const About = () => {
           </h1>
           <p></p>
           <p>
-            I'm an ambitious front-end developer actively looking for a position
+            I'm a creative front-end developer actively looking for a position
             in a start-up or an established company. For the past 18 months I've
             been programming full-time, constantly learning new technologies as
             well as freelancing at the same time. I'm mostly self-taught but I

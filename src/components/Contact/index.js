@@ -53,7 +53,21 @@ const Contact = () => {
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
-              <ul>
+              <input placeholder="Name" type="text" name="name" required />
+              <input placeholder="Email" type="email" name="email" required />
+              <input
+                placeholder="Subject"
+                type="text"
+                name="subject"
+                required
+              />
+              <textarea
+                placeholder="Message"
+                name="message"
+                required
+              ></textarea>
+              <input type="submit" className="flat-button" value="SEND" />
+              {/* <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
                 </li>
@@ -83,7 +97,7 @@ const Contact = () => {
                 <li>
                   <input type="submit" className="flat-button" value="SEND" />
                 </li>
-              </ul>
+              </ul> */}
             </form>
           </div>
         </div>

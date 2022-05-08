@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './home.scss'
 import Cube from './Cube/index.js'
+import poland from '../../assets/images/poland.svg'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,6 +33,8 @@ const Home = () => {
     }, 4000)
   }, [])
 
+  const [hovered, setHovered] = useState(false)
+
   return (
     <>
       <div className="container home-page">
@@ -59,6 +62,20 @@ const Home = () => {
           </h1>
           <h2>Front End React Developer</h2>
           <h2>Remote / Worldwide</h2>
+          <div className="location">
+            <div
+              className="flag"
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
+            >
+              <img alt="polish-flag" src={poland}></img>
+            </div>
+            {hovered && (
+              <div>
+                <h3>Current Location: Poland</h3>
+              </div>
+            )}
+          </div>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

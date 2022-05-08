@@ -23,6 +23,10 @@
     text-decoration: underline;
     text-decoration-color:#00d131; 
 
+    &:hover {
+      cursor: crosshair;
+    }
+
     img {
       width: 40px;
       border-radius: 50px;
@@ -53,6 +57,7 @@
 
       &:hover {
         color: #00d131;
+        cursor: crosshair;
 
         img {
           opacity: 0;
@@ -130,9 +135,13 @@
         display: block;
         font-size: 19px;
         line-height: 16px;
+        &:hover {
+          cursor: crosshair;
+        }
       }
       svg:hover {
         color: #00d131;
+        cursor: crosshair;
       }
     }
   }

@@ -70,6 +70,29 @@
     &:hover {
       background: #00d131;
       color: #333;
+      cursor: crosshair;
+    }
+  }
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  h3 {
+    position: relative;
+    line-height: 0;
+    color: #00d131;
+    opacity: 0.8;
+    font-size: 13px !important;
+    margin: 0;
+  }
+  img {
+    display: block;
+    height: 18px;
+    padding-right: 10px;
+    &:hover {
+      cursor: crosshair;
     }
   }
 }
@@ -95,6 +118,11 @@
   .home-page {
     h1{
       font-size: 56px;
+    }
+  }
+  .location {
+    img {
+      height: 15px;
     }
   }
 }

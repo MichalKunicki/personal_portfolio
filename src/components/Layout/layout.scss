@@ -17,7 +17,7 @@
   left: 120px;
   font-size: 20px;
   font-family: 'Oleo Script Swash Caps', cursive;
-  z-index: 3;
+  z-index: 2;
 }
 
 .bottom-tag-html {
@@ -116,6 +116,7 @@
   .text-animate-hover {
     &:hover {
       color: #00d131;
+      cursor: crosshair;
     }
   }
 }
@@ -180,6 +181,11 @@
     .text-zone {
       top: 40%;
     }
+  }
+}
+@media screen and (max-width: 415px) {
+  .tags {
+    z-index: 1;
   }
 }
 @media screen and (max-width: 376px) {

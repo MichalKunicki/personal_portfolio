@@ -34,8 +34,6 @@ export default function Logo() {
   return (
     <div className="canvas">
       <Canvas>
-        {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-        <pointLight position={[-10, -10, -10]} /> */}
         <OrbitControls />
         <Stars
           radius={100}
