@@ -65,9 +65,9 @@ const Contact = () => {
               onSubmit={sendEmail}
               name="contact"
               ref={form}
-              // method="post"
-              // data-netlify="true"
-              // netlify-honeypot="bot-field"
+              method="post"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
               {/* <input type="hidden" name="form-name" value="contact" /> */}
               <input placeholder="Name" type="text" name="name" required />
