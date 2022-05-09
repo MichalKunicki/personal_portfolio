@@ -23,13 +23,16 @@ const About = () => {
           </video>
         </div>
         <div className="text-zone">
-          <h1>
+          <h1 className="large-h1">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>
+          <div className="small-h1">
+            <h1>About me</h1>
+          </div>
           <p></p>
           <p>
             I'm a creative front-end developer actively looking for a position

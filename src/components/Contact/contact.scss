@@ -85,6 +85,15 @@
     }
   }
 }
+@media screen and (max-width: 430px) {
+  .small-h1 {
+    display: block;
+  }
+
+  .large-h1 {
+    display: none;
+  }
+}
 @media screen and (max-width: 380px) {
   .contact-form {
     margin-top: 10px;

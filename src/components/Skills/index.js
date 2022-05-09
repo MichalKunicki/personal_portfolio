@@ -25,13 +25,16 @@ const Skills = () => {
     <>
       <div className="container skills-page">
         <div className="text-zone">
-          <h1>
+          <h1 className="large-h1">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['S', 'k', 'i', 'l', 'l', 's']}
               idx={15}
             />
           </h1>
+          <div className="small-h1">
+            <h1>Skills</h1>
+          </div>
           <p>
             I specialize in React and its whole ecosystem. I work with framworks
             like NextJS or Gatsby on a daily basis. I am profficient in HTML and

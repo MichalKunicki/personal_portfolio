@@ -42,13 +42,16 @@ const Contact = () => {
     <>
       <div className="container contact-page">
         <div className="text-zone">
-          <h1>
+          <h1 className="large-h1">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
               idx={15}
             />
           </h1>
+          <div className="small-h1">
+            <h1>Contact me</h1>
+          </div>
           <p>
             I am currently applying for mid-positions specifically as a React
             front end developer - with an emphasis on web3 projects or

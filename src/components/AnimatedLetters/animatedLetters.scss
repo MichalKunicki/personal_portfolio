@@ -25,3 +25,11 @@
     animation-delay: #{$i / 10}s;
   }
 }
+@media screen and (max-width: 430px) {
+  .text-animate {
+    animation: none;
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+  }
+}
