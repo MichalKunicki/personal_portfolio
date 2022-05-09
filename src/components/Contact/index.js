@@ -62,6 +62,7 @@ const Contact = () => {
           </p>
           <div className="contact-form">
             <form
+              onSubmit={sendEmail}
               name="contact"
               ref={form}
               method="post"
@@ -82,12 +83,7 @@ const Contact = () => {
                 name="message"
                 required
               ></textarea>
-              <input
-                onClick={sendEmail}
-                type="submit"
-                className="flat-button"
-                value="SEND"
-              />
+              <input type="submit" className="flat-button" value="SEND" />
               <div className="created-with">
                 <h3>Website created with React & ThreeJS.</h3>
                 <div className="icon">
