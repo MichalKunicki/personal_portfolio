@@ -61,7 +61,12 @@ const Contact = () => {
             Skype/Linkedin!&#x1F47D;
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form
+              name="form-name"
+              value="contact"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
