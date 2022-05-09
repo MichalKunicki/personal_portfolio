@@ -79,28 +79,11 @@ textarea {
     background: #005213;
   }
 }
-@media only screen and (max-width : 450px) {
-	.animated {
-    transition-property: none !important;
-    transform: none !important;
-    animation: none !important;
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-	}
+body.wpex-is-mobile-device .wpb_animate_when_almost_visible {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  animation: none;
 }
