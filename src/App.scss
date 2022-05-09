@@ -79,11 +79,3 @@ textarea {
     background: #005213;
   }
 }
-body.wpex-is-mobile-device .wpb_animate_when_almost_visible {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-animation: none;
-  -moz-animation: none;
-  -o-animation: none;
-  animation: none;
-}
