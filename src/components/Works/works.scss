@@ -197,7 +197,13 @@ ul {
     }
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 417px) {
+  .flip {
+    >.front,
+    >.back {
+        transition-duration: 0s;
+    }
+  }
   .works {
     top: 44px;
   }
