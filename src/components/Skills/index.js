@@ -46,8 +46,8 @@ const Skills = () => {
           </p>
           <p>
             Some of the miscellanous technologies and libraries I work with are:
-            ThreeJS, GraphQL, GraphCMS, Axios, NodeJS, Git, Github, VSCode and
-            more.
+            TypeScript, ThreeJS, GraphQL, GraphCMS, Axios, NodeJS, Git, Github,
+            VSCode and more.
           </p>
           <p>
             I am open to learning new technologies required for your project. As
