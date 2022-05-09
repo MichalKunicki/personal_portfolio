@@ -28,7 +28,7 @@
   width: 100%;
   will-change: contents;
   height: 100%;
-  min-height: 566px;
+  min-height: 500px;
   position: absolute;
   opacity: 0;
   margin: 0 auto;
@@ -36,7 +36,7 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container.about-page {
   p {
@@ -45,8 +45,7 @@
 }
 .container.contact-page,
 .container.skills-page,
-.container.about-page,
-.container.works-page {
+.container.about-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -125,8 +124,7 @@
     left: 40px;
   }
   .container.contact-page,
-  .container.about-page,
-  .container.works-page {
+  .container.about-page {
     .text-zone {
       width: 80%;
       background:rgba(0, 0, 0, 0.4);
@@ -174,12 +172,19 @@
   .tags {
     display: none;
   }
-  .container.contact-page,
-  .container.skills-page,
-  .container.about-page,
-  .container.works-page {
-    .text-zone {
-      top: 40%;
+  .page {
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-height: 630px) {
+  .text-zone {
+    h1 {
+      &:before {
+        display: none;    
+      }
+      &:after {
+        display: none;
+      }
     }
   }
 }

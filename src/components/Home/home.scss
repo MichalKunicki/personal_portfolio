@@ -1,6 +1,7 @@
 // Removing animated H1s from mobile devices with media queries below.
 .small-h1 {
   display: none;
+  z-index: -1;
 }
 .large-h1 {
   display: block;
@@ -171,6 +172,27 @@
   }
   .large-h1 {
     display: none;
+  }
+} 
+
+@media screen and (max-height: 430px) {
+  .small-h1 {
+    display: block;
+    h1 {
+      font-size: 42px;
+      line-height: 35px;
+    }
+  }
+  .large-h1 {
+    display: none;
+  }
+  .flat-button {
+    display: none;
+  }
+  .home-page {
+    .text-zone {
+      transform: translateY(-90%);
+    }
   }
 }
 @media screen and (max-width: 376px) {

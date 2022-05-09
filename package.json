@@ -20,6 +20,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-toastify": "^9.0.1",
     "sass": "^1.49.9",
     "three": "^0.139.2",
     "three-stdlib": "^2.9.1",

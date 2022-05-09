@@ -4,7 +4,6 @@
   justify-content: center;
   width: 100vw;
   height: 100%;
-  overflow: hidden;
 }
 .contact-form {
   width: 100%;
@@ -89,6 +88,13 @@
       }
     }
   }
+  .Toastify__toast-container {
+    width: 250px;
+  }
+  .Toastify__toast {
+    background-color: black;
+    border: solid 2px #01611b;
+  }
 }
 @media screen and (max-width: 430px) {
   .small-h1 {
@@ -139,12 +145,11 @@
   input, textarea {
     font-size: 13px !important;
   }
-  input {
-    height: 40px !important;
-  }
-  .text-zone {
-    h1 {
-      font-size: 38px !important;
+  .contact-page {
+    .text-zone {
+      h1 {
+        font-size: 36px !important;
+      }
     }
   }
 }

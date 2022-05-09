@@ -7,9 +7,15 @@ import Matrix from './Matrix/index.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
+  const successMsg = () => toast.success('Message successfully sent!')
+  const errorMsg = () =>
+    toast.error('Failed to send the message, please try again.')
 
   useEffect(() => {
     return setTimeout(() => {
@@ -29,12 +35,13 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Message successfully sent!')
+          successMsg()
         },
         () => {
-          alert('Failed to send the message, please try again')
+          errorMsg()
         }
       )
+    form.current.reset()
   }
 
   return (
@@ -60,15 +67,7 @@ const Contact = () => {
             Skype/Linkedin!&#x1F47D;
           </p>
           <div className="contact-form">
-            <form
-              onSubmit={sendEmail}
-              name="contact"
-              ref={form}
-              method="post"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-            >
-              {/* <input type="hidden" name="form-name" value="contact" /> */}
+            <form onSubmit={sendEmail} name="contact" ref={form} method="post">
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
@@ -96,6 +95,17 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+            <ToastContainer
+              position="bottom-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
           </div>
         </div>
         <Matrix />
