@@ -30,7 +30,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message successfully sent!')
-          window.location.reload(true)
+          window.location.reload(false)
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -67,8 +67,8 @@ const Contact = () => {
               onSubmit={sendEmail}
               method="POST"
               data-netlify="true"
+              netlify
             >
-              <input type="hidden" name="form-name" value="contact" />
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
