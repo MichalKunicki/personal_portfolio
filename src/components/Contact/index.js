@@ -62,15 +62,13 @@ const Contact = () => {
           </p>
           <div className="contact-form">
             <form
-              name="form-name"
-              value="contact"
+              name="contact"
               ref={form}
               onSubmit={sendEmail}
               method="POST"
-              netlify
               data-netlify="true"
-              data-netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
