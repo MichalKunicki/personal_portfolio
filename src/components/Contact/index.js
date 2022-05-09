@@ -84,19 +84,19 @@ const Contact = () => {
                 required
               ></textarea>
               <input type="submit" className="flat-button" value="SEND" />
-              <div className="created-with">
-                <h3>Website created with React & ThreeJS.</h3>
-                <div className="icon">
-                  <a
-                    href="https://github.com/MichalKunicki/personal_portfolio"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon icon={faLink} color="#bdbdbd" />
-                  </a>
-                </div>
-              </div>
             </form>
+            <div className="created-with">
+              <h3>Website created with React & ThreeJS.</h3>
+              <div className="icon">
+                <a
+                  href="https://github.com/MichalKunicki/personal_portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLink} color="#bdbdbd" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <Matrix />
