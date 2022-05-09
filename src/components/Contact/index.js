@@ -61,14 +61,7 @@ const Contact = () => {
             Skype/Linkedin!&#x1F47D;
           </p>
           <div className="contact-form">
-            <form
-              name="contact"
-              ref={form}
-              onSubmit={sendEmail}
-              method="POST"
-              data-netlify="true"
-              netlify
-            >
+            <form name="contact" ref={form} method="POST" data-netlify="true">
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
@@ -82,7 +75,12 @@ const Contact = () => {
                 name="message"
                 required
               ></textarea>
-              <input type="submit" className="flat-button" value="SEND" />
+              <input
+                onClick={sendEmail}
+                type="submit"
+                className="flat-button"
+                value="SEND"
+              />
               <div className="created-with">
                 <h3>Website created with React & ThreeJS.</h3>
                 <div className="icon">
