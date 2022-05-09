@@ -66,6 +66,10 @@ const Contact = () => {
               value="contact"
               ref={form}
               onSubmit={sendEmail}
+              method="POST"
+              netlify
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
             >
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
