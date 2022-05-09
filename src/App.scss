@@ -81,6 +81,9 @@ textarea {
 }
 @media only screen and (max-width : 450px) {
 	.animated {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
 		/*CSS transitions*/
 		-o-transition-property: none !important;
 		-moz-transition-property: none !important;

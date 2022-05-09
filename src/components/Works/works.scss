@@ -45,7 +45,7 @@
       display: block;
       transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
       transition-duration: .3s;
-      transition-property: transform, opacity;
+      transition-property: transform;
   }
   >.front {
       transform: rotateY(0deg);
