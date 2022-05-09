@@ -61,7 +61,14 @@ const Contact = () => {
             Skype/Linkedin!&#x1F47D;
           </p>
           <div className="contact-form">
-            <form name="contact" ref={form} method="POST" data-netlify="true">
+            <form
+              name="contact"
+              ref={form}
+              method="post"
+              netlify
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <input placeholder="Name" type="text" name="name" required />
               <input placeholder="Email" type="email" name="email" required />
               <input
