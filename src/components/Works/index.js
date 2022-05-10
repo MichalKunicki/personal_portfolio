@@ -10,7 +10,7 @@ const Works = () => {
     <>
       <div className="container works-page">
         <div className="video-stars">
-          <video autoPlay muted playsInline webkit-playsinline>
+          <video autoPlay muted playsInline>
             <source src={stars} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -42,20 +42,11 @@ const Works = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://www.linkedin.com"
+                        href="https://nifty-tereshkova-42fd30.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                       >
                         <FontAwesomeIcon icon={faLink} color="#bdbdbd" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/MichalKunicki"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <FontAwesomeIcon icon={faGithub} color="#bdbdbd" />
                       </a>
                     </li>
                   </ul>
