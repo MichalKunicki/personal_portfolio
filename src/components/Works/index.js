@@ -42,7 +42,7 @@ const Works = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://nifty-tereshkova-42fd30.netlify.app/"
+                        href="https://hookrod.netlify.app/"
                         target="_blank"
                         rel="noreferrer"
                       >

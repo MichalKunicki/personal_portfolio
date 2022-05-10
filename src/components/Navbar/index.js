@@ -54,7 +54,11 @@ const Navbar = () => {
       <div className="socials">
         <ul>
           <li>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="www.linkedin.com/in/michal-kunicki"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} color="#bdbdbd" />
             </a>
           </li>
