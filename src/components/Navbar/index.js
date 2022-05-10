@@ -55,7 +55,7 @@ const Navbar = () => {
         <ul>
           <li>
             <a
-              href="www.linkedin.com/in/michal-kunicki"
+              href="https://linkedin.com/in/michal-kunicki"
               target="_blank"
               rel="noreferrer"
             >
