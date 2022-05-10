@@ -40,13 +40,13 @@ const About = () => {
             been programming full-time, constantly learning new technologies as
             well as freelancing at the same time. I'm mostly self-taught but I
             have a bit of academic computer-science knowledge after completing
-            the Harvard's CS50 Course.
+            Harvard's CS50 course.
           </p>
           <p align="LEFT">
             I've been working remotely for the past 4 years and that is the work
             environment I strive in. All my life goals circle around the idea of
             remote work so I guess you wouldn't meet me in an office. &#127796;
-            My endgoal in programming is to join or create an innovative web3
+            My end goal in programming is to join or create an innovative web3
             project based on blockchain solutions.
           </p>
           <p>

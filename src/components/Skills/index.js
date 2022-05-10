@@ -37,7 +37,7 @@ const Skills = () => {
           </div>
           <p>
             I specialize in React and its whole ecosystem. I work with framworks
-            like NextJS or Gatsby on a daily basis. I am profficient in HTML and
+            like NextJS or Gatsby on a daily basis. I am proficient in HTML and
             all the latest CSS standards like Sass, TailwindCSS, Styled
             Components etc. Most of my work is documented on Github. I try to
             push code daily and version control all of my code with Git.
