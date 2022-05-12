@@ -36,7 +36,7 @@ const Skills = () => {
             <h1>Skills</h1>
           </div>
           <p>
-            I specialize in React and its whole ecosystem. I work with framworks
+            I specialize in React and its whole ecosystem. I work with frameworks
             like NextJS or Gatsby on a daily basis. I am proficient in HTML and
             all the latest CSS standards like Sass, TailwindCSS, Styled
             Components etc. Most of my work is documented on Github. I try to
