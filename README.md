@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 
-## Link https://mkunicki.netlify.app/
+## Link https://mkunicki.dev
 
 
 ## Description
