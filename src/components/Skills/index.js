@@ -36,11 +36,11 @@ const Skills = () => {
             <h1>Skills</h1>
           </div>
           <p>
-            I specialize in React and its whole ecosystem. I work with frameworks
-            like NextJS or Gatsby on a daily basis. I am proficient in HTML and
-            all the latest CSS standards like Sass, TailwindCSS, Styled
-            Components etc. Most of my work is documented on Github. I try to
-            push code daily and version control all of my code with Git.
+            I specialize in React and its whole ecosystem. I work with
+            frameworks like NextJS or Gatsby on a daily basis. I am proficient
+            in HTML and all the latest CSS standards like Sass, TailwindCSS,
+            Styled Components, etc. Most of my work is documented on Github. I
+            try to push code daily and version control all of my code with Git.
           </p>
           <p align="LEFT">
             I enjoy design work and I believe I have a good feeling of
@@ -48,9 +48,9 @@ const Skills = () => {
             engineers to deliver a perfect product.
           </p>
           <p>
-            Some of the miscellanous technologies and libraries I work with are:
-            TypeScript, ThreeJS, GraphQL, GraphCMS, Axios, NodeJS, Git, Github,
-            VSCode and more.
+            Some of the miscellaneous technologies and libraries I work with
+            are: TypeScript, ThreeJS, GraphQL, GraphCMS, Axios, NodeJS, Git,
+            Github, VSCode, and more.
           </p>
           <p>
             I am open to learning new technologies required for your project. As
